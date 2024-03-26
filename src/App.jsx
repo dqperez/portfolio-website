@@ -1,10 +1,10 @@
+import MainPage from "./pages/MainPage"; 
+
 function App() {
 
   return (
-    <h1 className="text-5xl font-bold  text-red underline">
-      Hello world!
-    </h1>
-  )
+    <MainPage />
+  );
 }
 
-export default App
+export default App;
