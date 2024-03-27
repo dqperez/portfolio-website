@@ -8,7 +8,7 @@ const NavBar = () => {
     };
     
     return(
-        <nav className="bg-button pb-8">
+        <nav className=" pb-8">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between h-16 items-center">
 
