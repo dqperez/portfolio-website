@@ -19,9 +19,9 @@ const NavBar = () => {
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
                     <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Home</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header  text-md font-medium">Works</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header  text-md font-medium">About</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header  text-md font-medium">Contact</a>
+                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Works</a>
+                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">About</a>
+                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Contact</a>
                     </div>
                 </div>
 
@@ -39,11 +39,11 @@ const NavBar = () => {
             </div>
 
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-                <div className="mt-8 px-2 pt-2 pb-3 sm:px-3">
-                <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <div className="bg-button flex flex-col items-center w-screen mt-6 py-8">
+                    <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Services</a>
+                    <a href="#" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
 

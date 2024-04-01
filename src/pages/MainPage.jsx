@@ -7,7 +7,7 @@ const MainPage = () => {
             <div className="fixed w-screen">
                 <NavBar /> 
             </div>
-            <div className="flex justify-center items-center w-full">
+            <div id="home" className="flex justify-center items-center w-full">
                 <Home />
             </div>
         </div>

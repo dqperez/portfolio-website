@@ -18,6 +18,7 @@ export default {
       'bg_white': "#FFFFFF", //
       'header': "#EA596E", //
       'subtitles' :"#001F3F", //
+      'body' :"#385572", //
       'button' : "#B6E2D3", //
     },
   },
