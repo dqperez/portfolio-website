@@ -3,7 +3,7 @@ import abouticon from "../assets/abouticon.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center h-screen">
+    <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center h-1/4">
       <div className="h-60 w-60 relative">
                 <img src={abouticon} className="w-full h-full object-cover" />
       </div>
