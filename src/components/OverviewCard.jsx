@@ -3,6 +3,7 @@ import projectIcon from "../assets/projectIcon.png";
 
 const OverviewCard = (props) => {
     const { title, summary, icon } = props;
+    
   return (
     <div className="flex flex-col block rounded-lg bg-bg_white shadow-md max-w-96">
       <img className="rounded-t-lg shadow-none" src={icon} alt="Project Icon" />
