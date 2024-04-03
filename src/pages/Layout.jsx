@@ -7,7 +7,9 @@ const Layout = ({children}) => {
   return (
     <div className="bg-bg">
         <NavBar/>
-        {children}
+        <div className="py-48 sm:py-0 md:py-0 lg:py-0">
+          {children}
+        </div>
         <Footer />
     </div>
   )

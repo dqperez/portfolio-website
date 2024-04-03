@@ -6,7 +6,7 @@ const Overview = () => {
     <div className="flex w-screen justify-center">
         <div className="flex flex-col items-center mt-8">
             <p className="text-4xl text-header font-bold">Overview</p>
-            <p className="text-md text-body">some projects i worked on/ contributed to</p>
+            <p className="text-md text-center text-body">some projects i worked on/ contributed to</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-8">
                 <OverviewCard title="TyphooNews" summary="A crisis information dashboard system using feedback-based text classification of typhoon-related tweets in the Philippines"/>
                 <OverviewCard title="Lif Game" summary="A play-to-earn platform highlighting user-created games and empowering earnings through play."/>
