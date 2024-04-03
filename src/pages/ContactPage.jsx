@@ -7,7 +7,7 @@ const ContactPage = () => {
             <div className="flex items-end h-screen">
                 <div className="flex flex-col p-20 lg:p-72 lg:ml-20">
                     <h5 class="text-4xl font-bold leading-tight py-4 text-header">Get in touch!</h5>
-                    <p className="w-1/2 ">
+                    <p className="w-1/2 text-subtitles">
                         Lorem ipsum dolor sit amet. Aut voluptas galisum sit beatae excepturi qui dolorem possimus non repellat tenetur quo quia sequi et vitae incidunt. Quo aspernatur omnis ut similique vero qui architecto sint? 
                     </p>
                     <div className="flex flex-row py-2 gap-3">
