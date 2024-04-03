@@ -21,6 +21,8 @@ export default {
       'body' :"#385572", //
       'button' : "#B6E2D3", //
       'footer' : "#DAA7B1", //
+      'cardTitle' : "#525255", //
+      'cardBody' : "#8A8A8F", //
     },
   },
   plugins: [],

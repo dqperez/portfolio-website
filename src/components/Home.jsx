@@ -17,6 +17,7 @@ const Home = () => {
             <div className="h-80 w-80 relative">
                 <img src={icon} className="w-full h-full object-cover" />
             </div>
+            
         </div>
     );
 };
