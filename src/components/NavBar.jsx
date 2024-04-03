@@ -8,7 +8,7 @@ const NavBar = () => {
     };
     
     return(
-        <nav className=" pb-8">
+        <nav className="fixed w-screen pb-8">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between h-16 items-center">
 
@@ -19,9 +19,9 @@ const NavBar = () => {
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
                     <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Home</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Works</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">About</a>
-                    <a href="#" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Contact</a>
+                    <a href="/works" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Works</a>
+                    <a href="/about" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">About</a>
+                    <a href="/contact" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Contact</a>
                     </div>
                 </div>
 

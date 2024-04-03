@@ -2,14 +2,12 @@ import NavBar from "../components/NavBar";
 import Home from "../components/Home";
 import Overview from "../components/Overview";
 import Footer from "../components/Footer";
+import Layout from "./Layout";
 
 const MainPage = () => {
     return (
-        <div className="flex flex-col">
+        <Layout>
             <div className="bg-bg flex h-screen">
-                <div className="fixed w-screen">
-                    <NavBar /> 
-                </div>
                 <div id="home" className="flex flex-col justify-center items-center w-full">                   
                     <Home />
                     {/* <div className="flex">
@@ -30,9 +28,7 @@ const MainPage = () => {
                 </p>
                 </div>
             </div>
-            
-            <Footer />
-        </div>
+        </Layout>
         
     );
 };
