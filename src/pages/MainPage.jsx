@@ -22,7 +22,14 @@ const MainPage = () => {
                 <Overview />
             </div>
 
-
+            <div className="bg-bg flex items-center justify-center h-80">
+                <div class="flex flex items-center justify-center h-40 w-1/2 mb-20 rounded-lg bg-gradient-to-r from-footer to-button">
+                <p className="text-lg" style={{ color: 'white' }}>
+                    “The simplest way to achieve simplicity is through thoughtful reduction.”
+                    — John Maeda            
+                </p>
+                </div>
+            </div>
             
             <Footer />
         </div>
