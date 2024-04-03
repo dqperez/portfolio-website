@@ -20,6 +20,7 @@ export default {
       'subtitles' :"#001F3F", //
       'body' :"#385572", //
       'button' : "#B6E2D3", //
+      'footer' : "#DAA7B1", //
     },
   },
   plugins: [],
