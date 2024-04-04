@@ -16,7 +16,9 @@ const MainPage = () => {
                 <div id="home" className="flex flex-col justify-center items-center w-screen"> 
                     <Home />
                     <div className="flex py-6 animate-bounce">
-                        <svg className="text-header" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg>       
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-header w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                        </svg>
                     </div>                            
                 </div> 
             </div>
