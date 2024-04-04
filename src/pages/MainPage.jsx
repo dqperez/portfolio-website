@@ -35,12 +35,6 @@ const MainPage = () => {
                 <GradientQuote />
                 <Contact />
             </div>
-
-
-
-            
-
-
         </Layout>
         
     );
