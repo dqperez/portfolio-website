@@ -4,6 +4,10 @@ import Overview from "../components/Overview";
 import Footer from "../components/Footer";
 import Layout from "./Layout";
 import GradientQuote from "../components/GradientQuote";
+import Toolkit from "../components/Toolkit";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Contact from "../components/Contact";
 
 const MainPage = () => {
     return (
@@ -17,9 +21,26 @@ const MainPage = () => {
                 </div> 
             </div>
             
-            <div className="flex h-auto p-16">
+            <div className="flex flex-col h-auto p-16">
                 <Overview />
-            </div>            
+                <Toolkit />
+            </div>
+
+            <div className="flex flex-col pb-32 gap-8 justify-center items-center">
+                <About />
+                <Experience />
+            </div>
+
+            <div className="flex flex-col items-center justify-center pb-16 h-1/2">
+                <GradientQuote />
+                <Contact />
+            </div>
+
+
+
+            
+
+
         </Layout>
         
     );
