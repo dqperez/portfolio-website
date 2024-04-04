@@ -19,7 +19,7 @@ const NavBar = () => {
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
                     <a href="/" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Home</a>
-                    <a href="/works" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Works</a>
+                    <a href="/works" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Work</a>
                     <a href="/about" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">About</a>
                     <a href="/contact" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Contact</a>
                     </div>
@@ -41,7 +41,7 @@ const NavBar = () => {
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <div className="bg-button flex flex-col items-center w-screen mt-6 py-8">
                     <a href="/" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="/works" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Works</a>
+                    <a href="/works" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Work</a>
                     <a href="/about" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
                     <a href="/contact" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
