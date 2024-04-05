@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="">
-            <div className="flex items-center justify-center w-screen">
+            <div id="contact" className="flex items-center justify-center w-screen">
                 <div className="flex flex-col p-20 lg:p-72 lg:ml-20">
                     <h5 class="text-4xl font-bold py-4 text-header">Get in touch!</h5>
                     <p className="w-1/2 text-subtitles">

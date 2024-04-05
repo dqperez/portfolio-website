@@ -1,8 +1,9 @@
 import icon from "../assets/icon.png";
+import {useRef} from 'react';
 
-const Home = () => {
+const Home = ({homeRef}) => {
     return(
-        <div className="flex flex-col justify-center items-center lg:flex-row">
+        <div ref={homeRef} id="home" className="flex flex-col justify-center items-center lg:flex-row">
             <div className="w-1/2 lg:w-1/3">
                 <p className="text-4xl text-subtitles font-bold">Hello, I'm <span className="text-4xl text-header">Darlene!🌺</span>
                     </p>
