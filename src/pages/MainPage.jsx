@@ -17,7 +17,7 @@ const MainPage = () => {
     const contactRef = useRef(null);
 
     return (
-        <div>
+        <div className="bg-bg">
             <div className="flex h-screen">
                 <NavBar homeRef={homeRef} workRef={workRef} aboutRef={aboutRef} contactRef={contactRef}/>
                 <div id="home" className="flex flex-col justify-center items-center w-screen"> 
