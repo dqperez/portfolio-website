@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import Home from "../components/Home";
 import Overview from "../components/Overview";
 import Footer from "../components/Footer";
-import Layout from "./Layout";
 import GradientQuote from "../components/GradientQuote";
 import Toolkit from "../components/Toolkit";
 import About from "../components/About";
