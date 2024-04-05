@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NavBar = ({homeRef}) => {
+const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleNavBar = () => {
@@ -19,12 +19,25 @@ const NavBar = ({homeRef}) => {
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {homeRef.current?.scrollIntoView()}}
+                        onClick={() => {homeRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+                        })}}
                     >Home</button>
-                    {/* <a href="#home" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Home</a> */}
-                    <a href="#work" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Work</a>
-                    <a href="#about" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">About</a>
-                    <a href="#contact" className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium">Contact</a>
+                    <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
+                        onClick={() => {workRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+                        })}}
+                    >Work</button>
+                    <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
+                        onClick={() => {aboutRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+                        })}}
+                    >About</button>
+                    <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
+                        onClick={() => {contactRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+                        })}}
+                    >Contact</button>
                     </div>
                 </div>
 

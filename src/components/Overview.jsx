@@ -5,9 +5,9 @@ import lifg from "../assets/lifg.png";
 import lifp from "../assets/lifp.png";
 import typ from "../assets/typ.png";
 
-const Overview = () => {
+const Overview = ({workRef}) => {
   return (
-    <div id="work" className="flex w-screen justify-center">
+    <div ref={workRef} id="work" className="flex w-screen justify-center">
         <div className="flex flex-col items-center">
             <p className="text-4xl text-header font-bold">Work</p>
             <p className="text-md text-center text-body">some projects i worked on/ contributed to</p>

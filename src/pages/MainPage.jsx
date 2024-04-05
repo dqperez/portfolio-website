@@ -13,11 +13,14 @@ import Contact from "../components/Contact";
 
 const MainPage = () => {
     const homeRef = useRef(null);
+    const workRef = useRef(null);
+    const aboutRef = useRef(null);
+    const contactRef = useRef(null);
 
     return (
         <div>
             <div className="flex h-screen">
-                <NavBar homeRef={homeRef} />
+                <NavBar homeRef={homeRef} workRef={workRef} aboutRef={aboutRef} contactRef={contactRef}/>
                 <div id="home" className="flex flex-col justify-center items-center w-screen"> 
                     <Home homeRef={homeRef}/>
                     <div className="flex py-6 animate-bounce">
@@ -29,18 +32,18 @@ const MainPage = () => {
             </div>
             
             <div className="flex flex-col h-auto">
-                <Overview />
+                <Overview workRef={workRef} />
                 <Toolkit />
             </div>
 
             <div className="flex flex-col pb-16 gap-8 justify-center items-center">
-                <About />
+                <About aboutRef={aboutRef}/>
                 <Experience />
             </div>
 
             <div className="flex flex-col h-auto">
                 <GradientQuote />
-                <Contact />
+                <Contact contactRef={contactRef}/>
             </div>
         </div>
         
