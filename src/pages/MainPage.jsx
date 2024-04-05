@@ -32,12 +32,12 @@ const MainPage = () => {
             
             <div className="flex flex-col h-auto">
                 <Overview workRef={workRef} />
-                <Toolkit />
+                <Experience />
             </div>
 
             <div className="flex flex-col pb-16 gap-8 justify-center items-center">
                 <About aboutRef={aboutRef}/>
-                <Experience />
+                <Toolkit />
             </div>
 
             <div className="flex flex-col h-auto">
