@@ -45,6 +45,7 @@ const MainPage = () => {
                 <GradientQuote />
                 <Contact contactRef={contactRef}/>
             </div>
+            <Footer />
         </div>
         
     );

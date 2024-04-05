@@ -19,10 +19,13 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {homeRef.current?.scrollIntoView({
-                            behavior: 'smooth'
-                        })}}
-                    >Home</button>
+                        onClick={() => {
+                            window.scrollTo({
+                                top:0,
+                                behavior: 'smooth'
+                            });
+                        }}>
+                    Home</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
                         onClick={() => {workRef.current?.scrollIntoView({
                             behavior: 'smooth'
