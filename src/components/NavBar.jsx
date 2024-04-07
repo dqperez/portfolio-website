@@ -8,7 +8,7 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
     };
     
     return(
-        <nav className="fixed w-screen pb-8">
+        <nav className={`${isOpen ? 'bg-button' : ''} fixed w-screen pb-8`}>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between h-16 items-center">
 
@@ -58,7 +58,7 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
             </div>
 
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-                <div className="bg-button flex flex-col items-center w-screen mt-6 py-8">
+                <div className="bg-button flex flex-col items-center h-screen w-screen mt-6 py-8">
                     <a href="#home" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
                     <a href="#work" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Work</a>
                     <a href="#about" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
