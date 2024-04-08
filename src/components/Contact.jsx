@@ -7,7 +7,7 @@ const Contact = ({contactRef}) => {
                 <div className="flex flex-col p-20 lg:p-72 lg:ml-20">
                     <h5 class="text-4xl font-bold py-4 text-header">Get in touch!</h5>
                     <p className="w-1/2 text-subtitles">
-                        Lorem ipsum dolor sit amet. Aut voluptas galisum sit beatae excepturi qui dolorem possimus non repellat tenetur quo quia sequi et vitae incidunt. Quo aspernatur omnis ut similique vero qui architecto sint? 
+                        Looking forward to discuss how my skills can support your projects and strengthen your team. Don't hesitate to reach out—I'm here to assist you in finding the perfect addition to your team.    
                     </p>
                     <div className="flex flex-row py-2 gap-3">
                       <a href="mailto:darlenegraceq@gmail.com" target="_blank" rel="noopener noreferrer">

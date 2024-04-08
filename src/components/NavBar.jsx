@@ -23,6 +23,7 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
                             window.scrollTo({
                                 top:0,
                                 behavior: 'smooth'
+                                
                             });
                         }}>
                     Home</button>
