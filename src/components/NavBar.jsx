@@ -18,14 +18,18 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
 
                 <div className="hidden md:block">
                     <div className="ml-10 mt-8 flex items-baseline space-x-8">
-                    <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {
-                            window.scrollTo({
-                                top:0,
-                                behavior: 'smooth'
-                                
-                            });
-                        }}>
+                        <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
+                            onClick={() => {
+                                const scrollToTop = () => {
+                                    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+                                    if (currentScroll > 0) {
+                                        window.requestAnimationFrame(scrollToTop);
+                                        window.scrollTo(0, currentScroll - currentScroll / 30); // adjust divisor to control speed
+                                    }
+                                };
+                                scrollToTop();
+                            }}
+                        >
                     Home</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
                         onClick={() => {workRef.current?.scrollIntoView({
@@ -60,7 +64,7 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
 
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <div className="bg-button flex flex-col items-center h-screen w-screen mt-6 py-8">
-                    <a href="#home" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#home" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium" >Home</a>
                     <a href="#work" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Work</a>
                     <a href="#about" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
                     <a href="#contact" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
