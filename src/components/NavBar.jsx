@@ -59,10 +59,10 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
 
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <div className="bg-button flex flex-col items-center h-screen w-screen mt-6 py-8">
-                    <a href="#home" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="#work" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Work</a>
-                    <a href="#about" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="#contact" className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    <a href="#home" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#work" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Work</a>
+                    <a href="#about" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#contact" onClick={toggleNavBar} className="block text-subtitles hover:text-header px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
 
