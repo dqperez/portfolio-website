@@ -8,7 +8,7 @@ const OverviewCard = (props) => {
     <div className="flex flex-col block rounded-lg bg-bg_white shadow-md max-w-96">
       <img className="rounded-t-lg shadow-none" src={icon} alt="Project Icon" />
       <div className="p-4">
-        <h5 className="text-lg font-medium leading-tight text-cardTitle">{title}</h5>
+        <h5 className="text-md font-bold leading-tight text-cardTitle">{title}</h5>
         <p className="text-sm text-cardBody">{summary}</p>
       </div>        
 </div>
