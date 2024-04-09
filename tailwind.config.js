@@ -9,7 +9,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Public Sans', ...defaultTheme.fontFamily.sans],
+      'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+      'serif' : ['Libre Baskerville', ...defaultTheme.fontFamily.serif]
     },
     colors:{
       'bg': "#FDF5E6", //
