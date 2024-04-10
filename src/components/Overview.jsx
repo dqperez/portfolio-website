@@ -17,7 +17,7 @@ const Overview = ({workRef}) => {
                 <OverviewCard icon={typ} title="TyphooNews" type="PYTHON DJANGO | VUE.JS | MYSQL | VUETIFY"summary="A crisis information dashboard system using feedback-based text classification of typhoon-related tweets in the Philippines"/>
                 <OverviewCard icon={lifg} title="Lif Game" type="FIGMA | PYTHON DJANGO | BOOTSTRAP"summary="A play-to-earn platform highlighting user-created games and empowering earnings through play."/>
                 <OverviewCard icon={gt} title="Get Tweets" type="PYTHON DJANGO | POSTGRESQL | BOOTSTRAP" summary="A web application that scrapes tweets, analyzes sentiment, and visualizes the results."/>
-                <OverviewCard icon={dp} title="My Portfolio" type="FIGMA | REACT.JS | TAILWIND CSS" summary="An AI-driven web application that features document editing and article creation"/>
+                <OverviewCard icon={dp} title="My Portfolio" type="FIGMA | REACT.JS | TAILWIND CSS" summary="A website to present a collection of my projects and skills to potential collaborators and employers."/>
                 {/* <OverviewCard icon={lifp} title="Lif Posts" type="FIGMA" summary="An AI-driven web application that features document editing and article creation"/> */}
             </div>
         </div>
