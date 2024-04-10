@@ -7,7 +7,7 @@ import typ from "../assets/typ.png";
 
 const Overview = ({workRef}) => {
   return (
-    <div ref={workRef} id="work" className="flex w-screen justify-center">
+    <div ref={workRef} id="work" className="flex w-screen justify-center pt-24">
         <div className="flex flex-col items-center">
             <p className="text-4xl text-header font-bold">Work</p>
             <p className="text-sm text-center text-body">some projects i worked on/ contributed to</p>
