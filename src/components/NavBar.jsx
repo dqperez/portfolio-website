@@ -53,13 +53,13 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
                         >
                     Home</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => scrollToElement(workRef, 1500)}
+                        onClick={() => scrollToElement(workRef, 1200)}
                     >Work</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => scrollToElement(aboutRef, 1500)}
+                        onClick={() => scrollToElement(aboutRef, 1200)}
                     >About</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => scrollToElement(contactRef, 1500)}
+                        onClick={() => scrollToElement(contactRef, 1200)}
                     >Contact</button>
                     </div>
                 </div>

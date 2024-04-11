@@ -16,6 +16,27 @@ const MainPage = () => {
     const aboutRef = useRef(null);
     const contactRef = useRef(null);
 
+    const scrollToElement = (ref, duration) => {
+        const targetElement = ref.current;
+        const startPosition = window.pageYOffset;
+        const targetPosition = targetElement.offsetTop;
+        const distance = targetPosition - startPosition;
+        const startTime = performance.now();
+    
+        const animateScroll = currentTime => {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const scrollY = startPosition + distance * progress;
+          window.scrollTo(0, scrollY);
+          
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        };
+    
+        requestAnimationFrame(animateScroll);
+      };
+
     return (
         <div className="flex flex-col bg-bg h-auto">
             <NavBar homeRef={homeRef} workRef={workRef} aboutRef={aboutRef} contactRef={contactRef}/>
@@ -25,9 +46,7 @@ const MainPage = () => {
                 <div id="home" className="flex flex-col justify-center items-center h-screen w-screen"> 
                     <Home homeRef={homeRef}/>
                     <div className="flex pb-8 animate-bounce">
-                        <button onClick={() => {workRef.current?.scrollIntoView({
-                                behavior: 'smooth'
-                        })}}>
+                        <button onClick={() => scrollToElement(workRef, 1200)}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-header w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
                             </svg>
