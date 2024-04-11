@@ -25,9 +25,13 @@ const MainPage = () => {
                 <div id="home" className="flex flex-col justify-center items-center h-screen w-screen"> 
                     <Home homeRef={homeRef}/>
                     <div className="flex pb-8 animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-header w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-                        </svg>
+                        <button onClick={() => {workRef.current?.scrollIntoView({
+                                behavior: 'smooth'
+                        })}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-header w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                            </svg>
+                        </button> 
                     </div>                            
                 </div>
 
