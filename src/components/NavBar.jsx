@@ -6,6 +6,27 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
     const toggleNavBar = () => {
         setIsOpen(!isOpen);
     };
+
+    const scrollToElement = (ref, duration) => {
+        const targetElement = ref.current;
+        const startPosition = window.pageYOffset;
+        const targetPosition = targetElement.offsetTop;
+        const distance = targetPosition - startPosition;
+        const startTime = performance.now();
+    
+        const animateScroll = currentTime => {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const scrollY = startPosition + distance * progress;
+          window.scrollTo(0, scrollY);
+          
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        };
+    
+        requestAnimationFrame(animateScroll);
+      };
     
     return(
         <nav className={`${isOpen ? 'bg-button bg-opacity-100' : ''} fixed bg-bg bg-opacity-40 w-screen pb-8`}>
@@ -24,7 +45,7 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
                                     const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
                                     if (currentScroll > 0) {
                                         window.requestAnimationFrame(scrollToTop);
-                                        window.scrollTo(0, currentScroll - currentScroll / 30); // adjust divisor to control speed
+                                        window.scrollTo(0, currentScroll - currentScroll / 50); // adjust divisor to control speed
                                     }
                                 };
                                 scrollToTop();
@@ -32,19 +53,13 @@ const NavBar = ({homeRef, workRef, aboutRef, contactRef}) => {
                         >
                     Home</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {workRef.current?.scrollIntoView({
-                            behavior: 'smooth'
-                        })}}
+                        onClick={() => scrollToElement(workRef, 1500)}
                     >Work</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {aboutRef.current?.scrollIntoView({
-                            behavior: 'smooth'
-                        })}}
+                        onClick={() => scrollToElement(aboutRef, 1500)}
                     >About</button>
                     <button className="text-subtitles hover:border-b-2 hover:border-header text-md font-medium" 
-                        onClick={() => {contactRef.current?.scrollIntoView({
-                            behavior: 'smooth'
-                        })}}
+                        onClick={() => scrollToElement(contactRef, 1500)}
                     >Contact</button>
                     </div>
                 </div>
