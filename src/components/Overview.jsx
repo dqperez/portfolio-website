@@ -12,7 +12,7 @@ const Overview = ({workRef}) => {
         <div className="flex flex-col items-center">
             <p className="text-4xl text-header font-bold">Work</p>
             <p className="text-sm text-center text-body">some projects i worked on/ contributed to </p>
-            <p className="text-sm text-header">(wip: pages for project details)</p>
+            <p className="text-sm text-header">(other projects' details are protected under NDA: overview available upon request )</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-8">
                 <OverviewCard icon={typ} title="TyphooNews" type="PYTHON DJANGO | VUE.JS | MYSQL | VUETIFY"summary="A crisis information dashboard system using feedback-based text classification of typhoon-related tweets in the Philippines"/>
                 <OverviewCard icon={lifg} title="Lif Game" type="FIGMA | PYTHON DJANGO | BOOTSTRAP"summary="A play-to-earn platform highlighting user-created games and empowering earnings through play."/>
