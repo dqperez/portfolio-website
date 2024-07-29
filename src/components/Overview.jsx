@@ -10,7 +10,7 @@ const Overview = ({workRef}) => {
   return (
     <div ref={workRef} id="work" className="flex w-screen justify-center pt-24">
         <div className="flex flex-col items-center">
-            <p className="text-4xl text-header font-bold">Work</p>
+            <p className="text-3xl text-header font-extrabold">Work</p>
             <p className="text-sm text-center text-body">some projects i worked on/ contributed to </p>
             <p className="text-sm text-header">(wip: pages for project details)</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-8">

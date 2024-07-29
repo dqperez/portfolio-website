@@ -3,11 +3,11 @@ import React from 'react';
 const Contact = ({contactRef}) => {
   return (
     <div ref={contactRef}>
-            <div id="contact" className="flex items-center justify-center w-screen">
-                <div className="flex flex-col p-20 lg:p-72 lg:ml-20">
-                    <h5 class="text-4xl font-bold py-4 text-header">Get in touch!</h5>
-                    <p className="w-1/2 text-body">
-                        Looking forward to discuss how my skills can support your projects and strengthen your team. Don't hesitate to reach out—I'm here to assist you in finding the perfect addition to your team.    
+            <div id="contact" className="flex  w-screen">
+                <div className="flex flex-col lg:p-72 lg: space-y-4">
+                    <h5 class="text-3xl font-extrabold text-header">Get in touch!</h5>
+                    <p className="w-1/2 text-sm text-body">
+                        I’m happy to chat about how my skills can help with your projects and team. Feel free to get in touch!    
                     </p>
                     <div className="flex flex-row py-2 gap-3 text-subtitles">
                       <a href="mailto:darlenegraceq@gmail.com" target="_blank" rel="noopener noreferrer">

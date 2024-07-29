@@ -4,7 +4,7 @@ import React from 'react';
 const experiences = [
   {
     company: "RBox International Solutions Inc.",
-    role: "Full Stack Developer",
+    role: "Junior Full Stack Developer",
     duration: "Jul 2024 - Present",
     description: "Worked on developing scalable web applications using React and Node.js."
   },
@@ -40,7 +40,7 @@ const VerticalStepper = () => {
             <span className="text-xs font-bold text-header uppercase">{exp.duration}</span>
             <h4 className="text-lg text-subtitles font-bold">{exp.role}</h4>
             <h3 className="text-subtitles">{exp.company}</h3>
-            <p className="mt-2 text-sm text-body">{exp.description}</p>
+            <p className="mt-2 text-sm text-body text-justify">{exp.description}</p>
           </div>
         </div>
       ))}
