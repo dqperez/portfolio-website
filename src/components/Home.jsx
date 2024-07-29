@@ -7,7 +7,7 @@ const Home = ({homeRef}) => {
             <div className="w-1/2 lg:w-1/3">
                 <p className="text-4xl text-subtitles font-bold">Hello, I'm <span className="text-4xl text-header">Darlene!🌺</span>
                     </p>
-                <p className="text-lg text-body my-4">I’m a Software Developer based in Quezon City, Philippines. With industry experience in Front-End Development and Web Design, I enjoy bringing ideas to life in the digital space.</p>
+                <p className="text-sm text-body text-justify my-4">I’m a Software Developer based in Quezon City, Philippines. With industry experience in Front-End Development and Web Design, I enjoy bringing ideas to life in the digital space.</p>
                 <div className="flex flex-row gap-3 text-subtitles">
                     <a href="mailto:darlenegraceq@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-header">
                         <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" ></path></svg>

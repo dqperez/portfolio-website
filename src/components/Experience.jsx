@@ -1,19 +1,15 @@
 import React from 'react';
+import VerticalStepper from './VerticalStepper';
 
 const Experience = () => {
   return (
     <div className='flex flex-col justify-center items-center w-screen'>
-        <p className="text-4xl text-header font-bold">Experience</p>
-        <p className="text-body text-center my-4">
-          <span className="font-bold">Software Developer<br/>Front-end Web Development and UI/UX Design</span>
-          <br/>Augmented Intelligence Pros Inc.,
-          <br/>Remote Work | 2021-Present
-          <br/><br/>
-          <span className="font-bold">Data Science Intern</span>
-          <br/>Trends and Technologies Inc.
-          <br/>Makati City | Summer 2018
-        </p>
-        
+
+        <p className="text-3xl text-header font-extrabold">Experience</p>
+        <div class="w-3/4 xl:w-1/3 py-8">
+        <VerticalStepper/>
+        </div>
+
     </div>
   )
 }
