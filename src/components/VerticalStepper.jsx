@@ -6,7 +6,7 @@ const experiences = [
     company: "RBox International Solutions Inc.",
     role: "Junior Full Stack Developer",
     duration: "Jul 2024 - Present",
-    description: "Worked on developing scalable web applications using React and Node.js."
+    description: "Developing an internal tool using Angular and Django, contributing to web design, and practicing Agile methodologies with Azure DevOps while adhering to best practices."
   },
   {
     company: "AIP Inc.",
@@ -18,7 +18,7 @@ const experiences = [
     company: "Trends and Technologies Inc.",
     role: "Data Science Intern",
     duration: "Jun 2018 - July 2018",
-    description: "Collaborated by integrating the interface for an intelligent web application using Bootstrap, Python-Django, and PostgreSQL for sentiment analysis to track customer satisfaction. Attended workshops on machine learning, UX design, whitepaper discussions, and soft skills. Trained in industry tools and practices, including version control, virtual environments, and scrum methodology."
+    description: "Collaborated by developing and integrating the interface for an intelligent web application using Bootstrap, Python-Django, and PostgreSQL for sentiment analysis to track customer satisfaction. Attended workshops on machine learning, UX design, whitepaper discussions, and soft skills. Trained in industry tools and practices, including version control, virtual environments, and scrum methodology."
   }
 ];
 
